@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input:read-only {
+    -webkit-user-select: none; /* Отключение выделения для Safari */
+    user-select: none; /* Отключение выделения для других браузеров */
+    caret-color: transparent; /* Скрытие курсора */
+  }
+
+  input:read-only {
+    pointer-events: none;
+  }
+
+  *:focus, *:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
