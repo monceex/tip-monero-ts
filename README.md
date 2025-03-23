@@ -18,6 +18,9 @@ You can find or change the network settings in [`config/config`](config/config).
 git clone https://github.com/monceex/tip-monero-ts.git
 ```
 ```bash
+cd tip-monero-ts
+```
+```bash
 pnpm install
 ```
 ```bash
