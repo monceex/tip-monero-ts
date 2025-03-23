@@ -6,7 +6,7 @@
 ### Network
 
 By default, the project is configured to work on **Stagenet** using a public node.  
-You can find or change the network settings in [`config.ts`](src/config/config.ts).
+You can find or change the network settings in .env or [`config.ts`](src/config/config.ts).
 
 ### Usage Notes
 
