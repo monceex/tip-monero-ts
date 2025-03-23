@@ -1,50 +1,55 @@
-# Vite & HeroUI Template
 
-This is a template for creating applications using Vite and HeroUI (v2).
+### tip-monero-ts
+- Create a wallet
+- Open an existing wallet via QR code
+- Sweep full balance to a specified address
+### Network
 
-[Try it on CodeSandbox](https://githubbox.com/frontio-ai/vite-template)
+By default, the project is configured to work on **Stagenet** using a public node.  
+You can find or change the network settings in [`config/config`](config/config).
 
-## Technologies Used
+### Usage Notes
 
-- [Vite](https://vitejs.dev/guide/)
-- [HeroUI](https://heroui.com)
-- [Tailwind CSS](https://tailwindcss.com)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org)
-- [Framer Motion](https://www.framer.com/motion)
+⚠️ If you sweep funds from the testing wallet, please be respectful and return the balance afterward.
 
-## How to Use
-
-To clone the project, run the following command:
+### Installation
 
 ```bash
-git clone https://github.com/frontio-ai/vite-template.git
+git clone https://github.com/monceex/tip-monero-ts.git
 ```
-
-### Install dependencies
-
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
-
 ```bash
-npm install
+pnpm install
 ```
-
-### Run the development server
-
 ```bash
-npm run dev
+pnpm run dev
 ```
 
-### Setup pnpm (optional)
+Go to ```http://localhost:5173``` in your browser.
 
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
+ 1. Create a wallet
+ 2. Copy the generated wallet address.
+ 3. Click on the link: [\[link\]](http://localhost:5173?n=Paper%20Wallet&h=1823796&m=U2FsdGVkX18Vut85CHPu%2bdyB3ME5ZQwvno/t/PbICc0Mjqi6kb/VNaPGUYh5iMGBlaIZOfeYp8K7DZbPC4KuBeRZGx5nUELGdlCyICslk9S0Fmup33gKRVnkyf4Xs4N9CdjbNn/pGTgUQE2peH/fHv25mUF4v/NHLPYT7JkyME6kqb4YKCRxhAxJgzhl3h9GEVupcNyK2piGmpZhncyfA7OhNYOW71%2bhGC%2bG2AcZWQHpdeAaVNFzF9ORypLulePM) or scan the QR code with your phone.
+ ![qrcode and secret key](https://ibb.co/0pPdxK9V)
+ 4. Enter secretkey ```gulp skew```  and sweep balance
 
-```bash
-public-hoist-pattern[]=*@heroui/*
-```
+> Note for mobile testing on local network If you're opening the app on
+> your phone connected to the same network, localhost won’t work
+> on your phone.
+> 
+> You’ll need to replace localhost in the URL with your computer's local
+> IP address. For example: http://192.168.0.42:5173
+> 
+> You can find your IP address via:
+> 
+> macOS / Linux: ```ifconfig``` or ```ip a``` Windows: ```ipconfig```
 
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
 
-## License
 
-Licensed under the [MIT license](https://github.com/frontio-ai/vite-template/blob/main/LICENSE).
+### Future Plans
+
+  
+
+- [ ] Wipe this shit
+
+- [ ] Rewrite with fewer regrets
+
