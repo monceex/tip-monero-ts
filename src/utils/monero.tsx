@@ -9,7 +9,7 @@ moneroTs.LibraryUtils.setWorkerLoader(() => new Worker(new URL("monero-ts/dist/m
 window.monero = moneroTs;
 
 if (!moneroTs) {
-  console.error("Ошибка загрузки monero-ts!");
+  console.error("error!");
 }
 
 let daemon = await moneroTs.connectToDaemonRpc(config.daemonUrl);
